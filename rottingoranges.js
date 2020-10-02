@@ -37,7 +37,7 @@ while (queue.length > 0 && fresh > 0) {
             let nextY = y + dy 
 
             //Find the next fresh orange to remove
-            if (nextX < 0 || nextX >= grid.length || nextY < 0 || nextY >= grid[0].length || grid[i][j] !== 1) {
+            if (nextX < 0 || nextX >= grid.length || nextY < 0 || nextY >= grid[0].length || grid[nextX][nextY] !== 1) {
                 continue
             }
 
